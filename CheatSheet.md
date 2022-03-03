@@ -204,7 +204,7 @@ search <service>     # find exploits
 use <exploit>     # select an exploit
 info     # detailed info when an exploit is selected 
 show options     # show you the available parameters for an exploit 
-SET <parameter name> <parameter value>    # set the parameters for an exploit
+set <parameter name> <parameter value>    # set the parameters for an exploit
 show targets     # list of OSs which are vulnerable to the selected exploit 
 check
 ```
