@@ -66,7 +66,7 @@ ip route add <CIDR notation> via <router addr>
 After performing an information gathering and ports scanning of a server, it is time to identify vulnerabilities </br>
 Helpful resources:
 - Nessus
-- Searchsploit 
+- Searchsploit tool
 - [Exploit Database](https://www.exploit-db.com/)
 - Using search command in msfconsole
 
@@ -111,9 +111,11 @@ User input can be:
 - Cookies
 - Form inputs
 - POST parameters
-- GET parameters </br>
+- GET parameters
+</br>   
 XSS attack involves injecting a malicious code into the output of a webpage, then it will excute by victom browser! </br>
-Check if the webpage is vulnerable to XSS attack:
+Check if the webpage is vulnerable to XSS attack:  </br>
+   
 ```
 <script>alert('I'm vulnerable!')</script>
 <strong>Bold</strong>
@@ -126,7 +128,7 @@ To automate the process you can use **XSSer** tool with **burp suit**
 
 ### SQL injection
 #### sqlmap
-It's a tool to automate SQLi detection and explotion </br>
+It's a tool to automate SQLi detection and explotion </br></br>
 Check if injection exists
 ```
 sqlmap -u <url> -p <parameters>     # GET req 
@@ -183,7 +185,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
 Perform the ARP poisoning attack
 ```
-arpspoof -i <Network Interface> -t <> -r <>
+arpspoof -i <Network Interface> -t <addr> -r <addr>
 ```
 
 ### Windows Shares Using Null Sessions
