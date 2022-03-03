@@ -210,6 +210,7 @@ check
 ```
 #### Meterpreter
 ```
+shell
 background
 sessions -l
 sessions -i 1
