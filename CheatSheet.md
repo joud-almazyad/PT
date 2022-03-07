@@ -34,9 +34,9 @@ python sublist3r.py -v -d <domain>
 
 Perform ping sweeping
 ```
-nmap -sn <target addr>
+nmap -sn <CIDR notation>
 nmap -sn -iL hosts.txt       # -iL: input list
-fping -a -g <target addr>       # -a: only a live hosts, -g: ping sweeping
+fping -a -g <CIDR notation>       # -a: only a live hosts, -g: ping sweeping
 ```
 
 If nmap couldn't detect the version of a service, then there may be a firewall!
