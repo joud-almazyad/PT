@@ -34,7 +34,7 @@ python sublist3r.py -v -d <domain>
 
 Perform ping sweeping
 ```
-nmap -sn <CIDR notation>
+nmap -sn <CIDR notation>       # Hosts discover
 nmap -sn -iL hosts.txt       # -iL: input list
 fping -a -g <CIDR notation>       # -a: only a live hosts, -g: ping sweeping
 ```
@@ -69,7 +69,10 @@ Helpful resources:
 - Searchsploit tool
 - [Exploit Database](https://www.exploit-db.com/)
 - Using search command in msfconsole
-
+- Nmap 
+```
+nmap -p <port> --script=vuln <target addr>   
+```
 ## Web Attacks
 
 ### Analyzing HTTP and HTTPS
